@@ -1,4 +1,4 @@
-require_relative "passenger.rb"
+# require_relative "passenger.rb"
 
 class Flight
     attr_reader :passengers
@@ -6,7 +6,7 @@ class Flight
     def initialize(flight_number,capacity)
         @flight_number = flight_number
         @capacity = capacity
-        @passengers = Array.new
+        @passengers = []
     end
 
     def full?
